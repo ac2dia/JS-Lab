@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/App.css';
 import {ReactSelectBox} from "./components/ReactSelectBox";
+import ReactInputBox from "./components/ReactInputBox";
 
 const options = [
     { value: 'chocolate', label: 'Chocolate' },
@@ -13,9 +14,10 @@ const options = [
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <ReactSelectBox options={options} isMulti={false} isDisabled={false} isClearable={true} isSearchable={true} />
-      </header>
+        <header className="App-header">
+        {/*<ReactSelectBox options={options} isMulti={false} isDisabled={false} isClearable={true} isSearchable={true} />*/}
+            <ReactInputBox></ReactInputBox>
+        </header>
     </div>
   );
 }
